@@ -6,6 +6,10 @@
 
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     background-image: url('salon1.jpg');
     background-size: cover;
@@ -47,8 +51,37 @@ nav {
 
 
 
-.menu-content {
-    display: none;
+.menu-window {
+    position: fixed;
+    left: 4rem;
+    padding: 2rem;
+    background-color: azure;
+    width: 30%;
+}
+
+.menu-close-btn {
+    position: absolute;
+    left: 1rem;
+    top: 0.4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    font-size: 2rem;
+    transition: text-decoration 0.3s;
+    text-decoration-color: transparent;
+    /* transition: all 0.3s; */
+}
+
+.menu-list li:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 
 /* ------------------------------------[ */
