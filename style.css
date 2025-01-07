@@ -23,6 +23,7 @@ body {
 }
 
 nav {
+    position: fixed;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -75,15 +76,45 @@ nav {
 }
 
 
+/* -------------------------------------------------- */
+
+.nav-window-container {
+    width: 100%;
+}
+
+.services-window {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: azure;
 
 
 
 
 
+}
+
+@media (max-width: 500px) {
+    .services-item-list {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+    }
+}
 
 
 
 
+
+.book-appointment-window {
+    text-align: center;
+    color: black;
+    background-color: azure;
+
+    & a {
+        color: black;
+    }
+}
 
 /* ----------------------------------------------- */
 .section-1 {
@@ -94,7 +125,7 @@ nav {
 }
 
 .salon-intro-container {
-
+    margin-top: 3rem;
     /* background: rgba(255, 255, 255, 0.3); */
     background: rgba(0, 0, 0, 0.8);
     padding: 2rem;
