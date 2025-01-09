@@ -179,10 +179,11 @@ nav {
     }
 
     .videos-container video {
-        height: 30vh;
+        height: 40vh;
+        /* width: 20%; */
     }
 }
 
 .videos-container video {
-    width: 60%;
+    width: 70%;
 }
