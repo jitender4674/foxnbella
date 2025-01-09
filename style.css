@@ -16,20 +16,20 @@ h1 {
     display: none;
 }
 
-body {
+/* body {
     background-image: url('salon3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 nav {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
 }
 
 
@@ -41,7 +41,7 @@ nav {
     & .nav-logo {
 
         font-size: 3.5rem;
-        color: azure;
+        color: white;
         margin-bottom: 0;
         padding: 0;
     }
@@ -58,7 +58,7 @@ nav {
     justify-content: space-around;
 
     & a {
-        color: azure;
+        color: white;
         font-size: 1.2rem;
         font-family: "Quicksand", sans-serif;
         font-weight: 500;
@@ -69,7 +69,7 @@ nav {
 
     & a:hover {
         text-decoration: underline;
-        text-decoration-color: azure;
+        text-decoration-color: white;
     }
 
 
@@ -87,11 +87,7 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: azure;
-
-
-
-
+    background-color: white;
 
 }
 
@@ -109,51 +105,84 @@ nav {
 .book-appointment-window {
     text-align: center;
     color: black;
-    background-color: azure;
+    background-color: white;
 
     & a {
         color: black;
     }
 }
 
-/* ----------------------------------------------- */
+/* ---------------------------------------- */
 .section-1 {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('salon3.jpg');
     height: 100vh;
-    padding: 4rem;
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center center;
+    /* overflow: hidden; */
 }
 
 .salon-intro-container {
-    margin-top: 3rem;
-    /* background: rgba(255, 255, 255, 0.3); */
-    background: rgba(0, 0, 0, 0.8);
-    padding: 2rem;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 1);
-}
-
-.salon-intro-text {
-    color: azure;
-    font-size: 1.2rem;
-    font-family: "Quicksand", serif;
-    font-weight: 500;
-
-}
-
-
-footer {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
     align-items: center;
     justify-content: center;
-    color: azure;
 
-    & a {
-        color: azure;
-        font-weight: 500;
-        margin-left: 1rem;
-        text-decoration: none;
+
+}
+
+.salon-intro-container-text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+
+/* section-2 */
+.instagram-videos-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+
+.videos-container {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    background-color: rgba(0, 0, 0, 0.8);
+    object-fit: cover;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30%;
+}
+
+@media(orientation:landscape) {
+    .videos-container {
+        /* margin: 1rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 1rem; */
+        background-color: rgba(0, 0, 0, 0.8);
+        object-fit: cover;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
+
+    .videos-container video {
+        height: 30vh;
+    }
+}
+
+.videos-container video {
+    width: 60%;
 }
