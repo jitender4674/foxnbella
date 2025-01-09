@@ -36,9 +36,11 @@ servicesWindow.addEventListener('mouseleave', () => {
 bookAppointmentBtn.addEventListener('mouseenter', () => {
     bookAppointmentWindow.classList.remove('hidden');
 });
-bookAppointmentWindow.addEventListener('mouseleave', () => {
+
+bookAppointmentBtn.addEventListener('mouseleave', () => {
     bookAppointmentWindow.classList.add('hidden');
 })
+
 bookAppointmentBtn.addEventListener('click', () => {
     if (bookAppointmentWindow.classList.contains('hidden')) {
         bookAppointmentWindow.classList.remove('hidden');
