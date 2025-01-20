@@ -145,59 +145,42 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 
 .videos-container {
-    margin: 0;
+    flex: 1 1 calc(33.3% - 2rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    object-fit: cover;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 30%;
+
 }
 
 .videos-container video {
-    width: 45%;
+    object-fit: cover;
+    max-width: 45%;
     border: 0.8rem solid;
 }
 
-/* 
-@media(orientation:landscape) {
-
-    .instagram-videos-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-
-
+@media (orientation: portrait) {
     .videos-container {
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        object-fit: cover;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        flex: 1 1 80%;
     }
-
-    .videos-container video {
-        height: 40vh;
-    }
-} */
+}
 
 
 
-.footer {
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & a {
+        color: white;
+    }
 }
