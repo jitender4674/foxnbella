@@ -86,7 +86,6 @@ nav {
     /* position: fixed; */
     display: flex;
     justify-content: space-around;
-    width: 100%;
     background-color: white;
 
 }
@@ -116,18 +115,13 @@ nav {
 .section-1 {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     background-image: url('salon3.jpg');
-    height: 100vh;
-    width: 100%;
     background-size: cover;
     background-position: center center;
-    /* overflow: hidden; */
 }
 
 .salon-intro-container {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
 
@@ -149,10 +143,8 @@ nav {
 .instagram-videos-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
-    /* padding: 2rem; */
 }
 
 
@@ -161,14 +153,18 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 1rem; */
-    background-color: rgba(0, 0, 0, 0.8);
     object-fit: cover;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 30%;
 }
 
+.videos-container video {
+    width: 45%;
+    border: 0.8rem solid;
+}
+
+/* 
 @media(orientation:landscape) {
 
     .instagram-videos-container {
@@ -177,18 +173,16 @@ nav {
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        /* padding: 2rem; */
     }
 
 
 
     .videos-container {
-        /* margin: 1rem; */
+        
         display: flex;
         align-items: center;
         justify-content: center;
-        /* padding: 1rem; */
-        background-color: rgba(0, 0, 0, 0.8);
+        
         object-fit: cover;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -196,13 +190,9 @@ nav {
 
     .videos-container video {
         height: 40vh;
-        /* width: 20%; */
     }
-}
+} */
 
-.videos-container video {
-    width: 70%;
-}
 
 
 .footer {
