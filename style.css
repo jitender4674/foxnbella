@@ -8,7 +8,12 @@
     transition: alll 0.3s ease-in-out;
 }
 
-h1 {
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.nav-1 h1 {
     line-height: 1.5
 }
 
@@ -111,6 +116,7 @@ nav {
     background-image: url('salon3.jpg');
     background-size: cover;
     background-position: center center;
+    margin-bottom: 1rem;
 }
 
 .salon-intro-container {
@@ -175,4 +181,24 @@ footer {
     & a {
         color: white;
     }
+}
+
+
+
+/* ------------------------------------- */
+.section-2 {
+    background-color: black;
+}
+
+
+.section-2 h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.section-2 h3 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
 }

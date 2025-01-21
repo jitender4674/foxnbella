@@ -13,18 +13,21 @@ const bookAppointmentWindow = document.getElementById('book-appointment-containe
 
 // -------------------------------------------------------
 servicesBtn.addEventListener('mouseenter', () => {
-    if (servicesWindow.classList.contains('hidden')) {
-        servicesWindow.classList.remove('hidden');
-    } else {
-        servicesWindow.classList.add('hidden')
-    }
+    servicesWindow.classList.toggle('hidden')
+    // if (servicesWindow.classList.contains('hidden')) {
+    //     servicesWindow.classList.remove('hidden');
+    // } else {
+    //     servicesWindow.classList.add('hidden')
+    // }
 });
 servicesBtn.addEventListener('click', () => {
-    if (servicesWindow.classList.contains('hidden')) {
-        servicesWindow.classList.remove('hidden');
-    } else {
-        servicesWindow.classList.add('hidden')
-    }
+    servicesWindow.classList.toggle('hidden');
+
+    // if (servicesWindow.classList.contains('hidden')) {
+    //     servicesWindow.classList.remove('hidden');
+    // } else {
+    //     servicesWindow.classList.add('hidden')
+    // }
 });
 servicesWindow.addEventListener('mouseleave', () => {
     servicesWindow.classList.add('hidden');
