@@ -117,6 +117,7 @@ nav {
     background-size: cover;
     background-position: center center;
     margin-bottom: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
 }
 
 .salon-intro-container {
@@ -137,7 +138,7 @@ nav {
 
 
 
-/* section-2 */
+/* section-1 videos */
 .instagram-videos-container {
     display: flex;
     flex-wrap: wrap;
@@ -188,6 +189,7 @@ footer {
 /* ------------------------------------- */
 .section-2 {
     background-color: black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
 }
 
 
@@ -201,4 +203,47 @@ footer {
     color: white;
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-2-services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+.services-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    position: relative;
+    overflow: hidden;
+
+    & img {
+        /* width: 33.3%; */
+
+        width: 100%;
+        box-shadow: 0 0px 15px rgba(255, 255, 255, 0.8);
+        border: 0.2rem solid white;
+        /* border-radius: 5px; */
+        transition: all 0.3s;
+    }
+
+    & img:hover {
+        transform: scale(1.05);
+    }
+
+    & a {
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+    }
 }
