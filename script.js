@@ -1,53 +1,36 @@
 'use strict';
 
+// nav buttons
 const servicesBtn = document.getElementById('services-btn');
 const servicesWindow = document.getElementById('servicesContainer');
 const bookAppointmentBtn = document.getElementById('book-appointment-btn');
-
 const bookAppointmentWindow = document.getElementById('book-appointment-container');
 
+// section 1
+const section1 = document.querySelector('.section-1');
 
 
 
 
 
-// -------------------------------------------------------
-servicesBtn.addEventListener('mouseenter', () => {
-    servicesWindow.classList.toggle('hidden')
-    // if (servicesWindow.classList.contains('hidden')) {
-    //     servicesWindow.classList.remove('hidden');
-    // } else {
-    //     servicesWindow.classList.add('hidden')
-    // }
-});
+
+
+
+// --------------------------------------------------
 servicesBtn.addEventListener('click', () => {
     servicesWindow.classList.toggle('hidden');
-
-    // if (servicesWindow.classList.contains('hidden')) {
-    //     servicesWindow.classList.remove('hidden');
-    // } else {
-    //     servicesWindow.classList.add('hidden')
-    // }
+    bookAppointmentWindow.classList.add('hidden');
 });
-servicesWindow.addEventListener('mouseleave', () => {
+
+
+bookAppointmentBtn.addEventListener('click', () => {
+    bookAppointmentWindow.classList.toggle('hidden');
     servicesWindow.classList.add('hidden');
 });
 
 
-
-
-bookAppointmentBtn.addEventListener('mouseenter', () => {
-    bookAppointmentWindow.classList.remove('hidden');
-});
-
-bookAppointmentBtn.addEventListener('mouseleave', () => {
+// section1 eventlistner
+section1.addEventListener('click', () => {
+    servicesWindow.classList.add('hidden');
     bookAppointmentWindow.classList.add('hidden');
 })
-
-bookAppointmentBtn.addEventListener('click', () => {
-    if (bookAppointmentWindow.classList.contains('hidden')) {
-        bookAppointmentWindow.classList.remove('hidden');
-    } else {
-        bookAppointmentWindow.classList.add('hidden');
-    }
-});
