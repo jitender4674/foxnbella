@@ -8,6 +8,8 @@
     transition: all 0.3s ease-in-out;
 }
 
+
+
 body {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -191,9 +193,9 @@ footer {
 /* ------------------------------------- */
 .section-2 {
     /* background-color: rgb(162, 162, 162); */
-    background: linear-gradient(45deg, rgb(101, 101, 101), white, rgb(101, 101, 101));
-    animation: gradientAnimation 8s ease infinite;
-    background-size: 200% 200%;
+    background: linear-gradient(45deg, rgb(50, 50, 50), white, rgb(50, 50, 50));
+    animation: gradientAnimation 5s ease infinite;
+    background-size: 150% 150%;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     /* margin-bottom: 1rem; */
 }
@@ -205,13 +207,11 @@ footer {
     }
 
     50% {
-        background-position: 100% 50%;
-        /* Midway */
+        background-position: 100% 0%;
     }
 
     100% {
         background-position: 0% 50%;
-        /* Loop back */
     }
 }
 
